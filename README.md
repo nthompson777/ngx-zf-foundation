@@ -110,31 +110,15 @@ For local development run:
  - `npm run build.watch` _*// in first terminal*_
  - `ng serve` _*// in second*_
 
-If you want to run the demo with Angular Universal:
- - `npm run demo.serve-universal`
 
 ## Troubleshooting
 
 So if you are in trouble, here's where you can look for help.
 
-The best place to ask questions is on [StackOverflow (under the `ngx-bootstrap` tag)](https://stackoverflow.com/questions/tagged/ngx-bootstrap)
-You can also join [our Slack channel](https://ngx-slack.herokuapp.com/) and link your stackoverflow question there. But try to avoid asking generic help questions directly on Slack since they can easily get lost in the chat. You can also [search among the existing GitHub issues](https://github.com/valor-software/ngx-bootstrap/issues?utf8=%E2%9C%93&q=is%3Aissue).
+The best place to ask questions is on [StackOverflow (under the `ngx-zf-foundation` tag)](https://stackoverflow.com/questions/tagged/ngx-zf-foundation)
+
 
 If, **and only if**, none of the above helped, please open a [new issue](https://github.com/valor-software/ngx-bootstrap/issues/new).
-
-## Contribution
-
-Are very welcome! And remember, contribution is not only PRs and code, but any help with docs or helping other developers to solve issues are very appreciated! Thanks in advance!
-
-Please read our [contribution guidelines](https://github.com/valor-software/ngx-bootstrap/blob/development/CONTRIBUTING.md).
-
-### If you need more modules check [here](https://github.com/valor-software/ng2-plans)
-
-Please read central `ngx` modules [readme](https://github.com/valor-software/ng2-plans) for details, plans and approach
-
-### Credits
-Crossbrowser testing sponsored by [Browser Stack](https://www.browserstack.com)
-[<img src="https://camo.githubusercontent.com/a7b268f2785656ab3ca7b1cbb1633ee5affceb8f/68747470733a2f2f64677a6f7139623561736a67312e636c6f756466726f6e742e6e65742f70726f64756374696f6e2f696d616765732f6c61796f75742f6c6f676f2d6865616465722e706e67" alt="Browser Stack" height="31px" style="background: cornflowerblue;">](https://www.browserstack.com)
 
 ### License
 
