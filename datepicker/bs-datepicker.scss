@@ -10,6 +10,7 @@
   box-shadow: 0 0 10px 0 $main-box-shadow;
   position: relative;
   z-index: 1;
+  left: 52px !important;
 
 
   &:after {
@@ -112,10 +113,10 @@
 
   /* .bs-datepicker-body */
   &-body {
-    padding: 10px;
+    padding: $body-padding;
     border-radius: 0 0 3px 3px;
-    min-height: 232px;
-    min-width: 278px;
+    // min-height: 232px;
+    min-width: 320px;
     border: 1px solid $border-color;
 
     .days.weeks {
@@ -128,9 +129,10 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
+      margin-bottom: .3rem;
 
       th {
-        font-size: 13px;
+        font-size: 11px;
         color: $font-color-02;
         font-weight: 400;
         text-align: center;
@@ -243,9 +245,9 @@
         }
 
         span {
-          width: 32px;
-          height: 32px;
-          line-height: 32px;
+          width: $calendar-days-size;
+          height: $calendar-days-size;
+          line-height: $calendar-days-size;
 
           &.select-start {
             z-index: 2;
@@ -393,7 +395,7 @@
 
   /* .bs-datepicker-btns */
   &-container {
-    padding: 15px;
+    padding: $container-padding;
   }
 
   /*.bs-datepicker-custom-range */
