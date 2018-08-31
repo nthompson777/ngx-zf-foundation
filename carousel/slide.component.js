@@ -5,6 +5,7 @@ var SlideComponent = /** @class */ (function () {
         /** Wraps element by appropriate CSS classes */
         this.addClass = true;
         this.carousel = carousel;
+        //this.inactive = true;
     }
     /** Fires changes in container collection after adding a new slide instance */
     /** Fires changes in container collection after adding a new slide instance */
@@ -21,10 +22,14 @@ var SlideComponent = /** @class */ (function () {
     SlideComponent.decorators = [
         { type: Component, args: [{
                     selector: 'slide',
-                    template: "\n    <div [class.active]=\"active\" class=\"item\">\n      <ng-content></ng-content>\n    </div>\n  ",
+                    template: "\n  <ng-content></ng-content>\n  ",
+                    styles: [
+                        "\n    :host {\n      display: block;\n      position: relative;\n    }\n  "
+                    ],
                     host: {
-                        '[attr.aria-hidden]': '!active'
-                    }
+                        '[attr.aria-hidden]': '!active', '[class.hide]': '!active',
+                    },
+                    
                 },] },
     ];
     /** @nocollapse */
@@ -33,7 +38,8 @@ var SlideComponent = /** @class */ (function () {
     ]; };
     SlideComponent.propDecorators = {
         "active": [{ type: HostBinding, args: ['class.active',] }, { type: Input },],
-        "addClass": [{ type: HostBinding, args: ['class.item',] }, { type: HostBinding, args: ['class.carousel-item',] },],
+        "addClass": [{ type: HostBinding, args: ['class.item',] }, { type: HostBinding, args: ['class.orbit-item',] },],
+        //"inactive": [{ type: HostBinding, args: ['class.hide',] }, { type: Input },],
     };
     return SlideComponent;
 }());
