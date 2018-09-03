@@ -30,12 +30,12 @@ var TooltipContainerComponent = /** @class */ (function () {
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     // tslint:disable-next-line
                     host: {
-                        '[class]': '"tooltip in tooltip-" + placement + " " + "bs-tooltip-" + placement + " " + placement + " " + containerClass',
+                        '[class]': '"tooltip tooltip-" + placement +  " " + placement + " " + containerClass',
                         '[class.show]': '!isBs3',
                         role: 'tooltip'
                     },
                     styles: [
-                        "\n    :host.tooltip {\n      display: block;\n    }\n    :host.bs-tooltip-top .arrow, :host.bs-tooltip-bottom .arrow {\n      left: 50%;\n      margin-left: -6px;\n    }\n    :host.bs-tooltip-left .arrow, :host.bs-tooltip-right .arrow {\n      top: 50%;\n      margin-top: -6px;\n    }\n  "
+                        "\n    :host.tooltip {\n      display: block;\n    }\n    :host.tooltip.top:before, :host.tooltip.bottom:before {\n      left: 40%;\n     }\n  :host.tooltip.top {\n margin-bottom: 13px;\n    }    :host.tooltip.bottom {\n margin-top: 13px;\n    }    :host.tooltip.left {\n margin-right: 13px;\n    }   :host.tooltip.right {\n margin-left: 13px;\n    }   :host.tooltip.left:before, :host.tooltip.right:before {\n      top: 35%;\n    }\n  "
                     ],
                     template: "\n    <div class=\"tooltip-arrow arrow\"></div>\n    <div class=\"tooltip-inner\"><ng-content></ng-content></div>\n    "
                 },] },
