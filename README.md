@@ -1,25 +1,15 @@
 <a href="http://valor-software.com/ngx-bootstrap/#/">
-    <h1 align="center">ngx-bootstrap</h1>
+    <h1 align="center">ngx-zf-foundation</h1>
 </a>
 
 <p align="center">
-Best way to quickly integrate <a href="https://getbootstrap.com/">Bootstrap 3</a> or <a href="https://getbootstrap.com/docs/4.0">Bootstrap 4</a> Components with <a href="https://angular.io/">Angular</a>
-</p>
-
-<p align="center">
-<a href="https://badge.fury.io/js/ngx-bootstrap"><img src="https://badge.fury.io/js/ngx-bootstrap.svg" alt="npm version" ></a>
-<a href="https://npmjs.org/ngx-bootstrap"><img src="https://img.shields.io/npm/dm/ngx-bootstrap.svg" alt="npm downloads" ></a>
-<a href="https://travis-ci.org/valor-software/ngx-bootstrap"><img alt="" src="https://travis-ci.org/valor-software/ngx-bootstrap.svg?branch=development"></a>
-
-<br/>
-<a href="https://ngx-slack.herokuapp.com"><img src="https://ngx-slack.herokuapp.com/badge.svg" alt="slack" ></a>
+Best way to quickly integrate <a href="https://foundation.zurb.com/">Zurb Foundation 6</a>  Components with <a href="https://angular.io/">Angular 6</a>. This is a fork of ngx-bootstrap so no jQuery required to implement with your Angular project.
 </p>
 
 ## Links
 
-- [Documentation](http://valor-software.com/ngx-bootstrap/)
+- [Documentation](http://valor-software.com/ngx-bootstrap/)  - Documentation for this fork coming soon.
 - [Release Notes](https://github.com/valor-software/ngx-bootstrap/blob/development/CHANGELOG.md)
-- [Slack Community](https://ngx-slack.herokuapp.com)
 
 <!-- [![codecov](https://codecov.io/gh/valor-software/ngx-bootstrap/branch/development/graph/badge.svg)](https://codecov.io/gh/valor-software/ngx-bootstrap) -->
 
@@ -42,9 +32,9 @@ ngx-bootstrap contains all core (and not only) Bootstrap components powered by A
 
 ## Installation instructions
 
-Install `ngx-bootstrap` from `npm`:
+Install `ngx-zf-foundation` from `yarn`:
 ```bash
-npm install ngx-bootstrap --save
+yarn add ngx-zf-foundation --save
 ```
 
 Add needed package to NgModule imports:
@@ -66,30 +56,17 @@ Add component to your page:
 </button>
 ```
 
-You will need bootstrap styles:
-- `Bootstrap 3`
+You will need Foundation 6 styles:
+- `Foundation 6`
 ```
 <!-- index.html -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet">
 ```
 
-- `Bootstrap 4`
+### Setting up the Foundation version manually
+Sometimes, your project might contain some library that could interfear with the Foundation framework, or you might have a customized version of Foundation:
 ```
-<!--- index.html -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-```
-### Setting up the bootstrap version manually
-Sometimes, your project might contain some library that could interfear with the bootstrap framework, or you might have a customized version of bootstrap. The consequence is that the process of determining bootstrap version might be failed, which can break the UI. In that case, we can still set the bootstrap version manually in the boostraping component (i.e. `AppComonent`):
-```
-import { setTheme } from 'ngx-bootstrap/utils';
-
-@Component({...})
-export class AppComponent {
-  constructor() {
-    setTheme('bs3'); // or 'bs4'
-    ...
-  }
-}
+Instructions here.............
 ```
 
 ## Usage & Demo
@@ -133,31 +110,15 @@ For local development run:
  - `npm run build.watch` _*// in first terminal*_
  - `ng serve` _*// in second*_
 
-If you want to run the demo with Angular Universal:
- - `npm run demo.serve-universal`
 
 ## Troubleshooting
 
 So if you are in trouble, here's where you can look for help.
 
-The best place to ask questions is on [StackOverflow (under the `ngx-bootstrap` tag)](https://stackoverflow.com/questions/tagged/ngx-bootstrap)
-You can also join [our Slack channel](https://ngx-slack.herokuapp.com/) and link your stackoverflow question there. But try to avoid asking generic help questions directly on Slack since they can easily get lost in the chat. You can also [search among the existing GitHub issues](https://github.com/valor-software/ngx-bootstrap/issues?utf8=%E2%9C%93&q=is%3Aissue).
+The best place to ask questions is on [StackOverflow (under the `ngx-zf-foundation` tag)](https://stackoverflow.com/questions/tagged/ngx-zf-foundation)
+
 
 If, **and only if**, none of the above helped, please open a [new issue](https://github.com/valor-software/ngx-bootstrap/issues/new).
-
-## Contribution
-
-Are very welcome! And remember, contribution is not only PRs and code, but any help with docs or helping other developers to solve issues are very appreciated! Thanks in advance!
-
-Please read our [contribution guidelines](https://github.com/valor-software/ngx-bootstrap/blob/development/CONTRIBUTING.md).
-
-### If you need more modules check [here](https://github.com/valor-software/ng2-plans)
-
-Please read central `ngx` modules [readme](https://github.com/valor-software/ng2-plans) for details, plans and approach
-
-### Credits
-Crossbrowser testing sponsored by [Browser Stack](https://www.browserstack.com)
-[<img src="https://camo.githubusercontent.com/a7b268f2785656ab3ca7b1cbb1633ee5affceb8f/68747470733a2f2f64677a6f7139623561736a67312e636c6f756466726f6e742e6e65742f70726f64756374696f6e2f696d616765732f6c61796f75742f6c6f676f2d6865616465722e706e67" alt="Browser Stack" height="31px" style="background: cornflowerblue;">](https://www.browserstack.com)
 
 ### License
 
