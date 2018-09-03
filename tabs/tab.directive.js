@@ -85,11 +85,11 @@ var TabDirective = /** @class */ (function () {
         "disabled": [{ type: Input },],
         "removable": [{ type: Input },],
         "customClass": [{ type: Input },],
-        "active": [{ type: HostBinding, args: ['class.active',] }, { type: Input },],
+        "active": [{ type: HostBinding, args: ['class.is-active',] }, { type: Input },],
         "select": [{ type: Output },],
         "deselect": [{ type: Output },],
         "removed": [{ type: Output },],
-        "addClass": [{ type: HostBinding, args: ['class.tab-pane',] },],
+        "addClass": [{ type: HostBinding, args: ['class.tabs-panel',] },],
     };
     return TabDirective;
 }());
