@@ -57,11 +57,11 @@ var BarComponent = /** @class */ (function () {
     BarComponent.decorators = [
         { type: Component, args: [{
                     selector: 'bar',
-                    template: "<ng-content></ng-content> ",
+                    template: "<p class=\"progress-meter-text\"><ng-content></ng-content></p> ",
                     host: {
                         role: 'progressbar',
                         'aria-valuemin': '0',
-                        '[class]': '"progress-bar " + (type ? "progress-bar-" + type + " bg-" + type : "")',
+                        '[class]': '"progress-meter"',
                         '[class.progress-bar-animated]': '!isBs3 && animate',
                         '[class.progress-bar-striped]': 'striped',
                         '[class.active]': 'isBs3 && animate',

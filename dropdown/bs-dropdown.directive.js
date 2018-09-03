@@ -225,39 +225,43 @@ var BsDropdownDirective = /** @class */ (function () {
         this._dropdown.dispose();
     };
     BsDropdownDirective.prototype.addBs4Polyfills = function () {
-        if (!isBs3()) {
+        if (isBs3()) {
             this.addShowClass();
             this.checkRightAlignment();
             this.addDropupStyles();
         }
-    };
+    }; 
     BsDropdownDirective.prototype.addShowClass = function () {
         if (this._inlinedMenu && this._inlinedMenu.rootNodes[0]) {
-            this._renderer.addClass(this._inlinedMenu.rootNodes[0], 'show');
+            this._renderer.addClass(this._inlinedMenu.rootNodes[0], 'is-open');
         }
     };
     BsDropdownDirective.prototype.removeShowClass = function () {
         if (this._inlinedMenu && this._inlinedMenu.rootNodes[0]) {
-            this._renderer.removeClass(this._inlinedMenu.rootNodes[0], 'show');
+            this._renderer.removeClass(this._inlinedMenu.rootNodes[0], 'is-open');
         }
     };
     BsDropdownDirective.prototype.checkRightAlignment = function () {
         if (this._inlinedMenu && this._inlinedMenu.rootNodes[0]) {
             var isRightAligned = this._inlinedMenu.rootNodes[0].classList.contains('dropdown-menu-right');
-            this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'left', isRightAligned ? 'auto' : '0');
+            // this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'left', isRightAligned ? 'auto' : '0');
             this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'right', isRightAligned ? '0' : 'auto');
         }
     };
     BsDropdownDirective.prototype.addDropupStyles = function () {
         if (this._inlinedMenu && this._inlinedMenu.rootNodes[0]) {
             // a little hack to not break support of bootstrap 4 beta
-            this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'top', this.dropup ? 'auto' : '100%');
+            this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'top', this.dropup ? '0' : 'auto');
+            this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'left', this.dropup ? 'auto' : 'auto');
+            this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'display', this.dropup ? 'block' : 'block');
             this._renderer.setStyle(this._inlinedMenu.rootNodes[0], 'transform', this.dropup ? 'translateY(-101%)' : 'translateY(0)');
         }
     };
     BsDropdownDirective.prototype.removeDropupStyles = function () {
         if (this._inlinedMenu && this._inlinedMenu.rootNodes[0]) {
-            this._renderer.removeStyle(this._inlinedMenu.rootNodes[0], 'top');
+           this._renderer.removeStyle(this._inlinedMenu.rootNodes[0], 'top');
+           this._renderer.removeStyle(this._inlinedMenu.rootNodes[0], 'left');
+           this._renderer.removeStyle(this._inlinedMenu.rootNodes[0], 'display');
             this._renderer.removeStyle(this._inlinedMenu.rootNodes[0], 'transform');
         }
     };

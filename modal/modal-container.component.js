@@ -78,9 +78,9 @@ var ModalContainerComponent = /** @class */ (function () {
     ModalContainerComponent.decorators = [
         { type: Component, args: [{
                     selector: 'modal-container',
-                    template: "\n    <div [class]=\"'modal-dialog' + (config.class ? ' ' + config.class : '')\" role=\"document\">\n      <div class=\"modal-content\">\n        <ng-content></ng-content>\n      </div>\n    </div>\n  ",
+                    template: "\n    <div [class]=\"'reveal' + (config.class ? ' ' + config.class : '')\" role=\"document\" style=\"display: block;\">\n      <div class=\"modal-content\">\n        <ng-content></ng-content>\n      </div>\n    </div>\n  ",
                     host: {
-                        class: 'modal',
+                        class: 'reveal-overlay',
                         role: 'dialog',
                         tabindex: '-1',
                         '[attr.aria-modal]': 'true'

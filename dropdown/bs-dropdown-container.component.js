@@ -12,7 +12,7 @@ var BsDropdownContainerComponent = /** @class */ (function () {
             _this.isOpen = value;
             var dropdown = _element.nativeElement.querySelector('.dropdown-menu');
             if (dropdown && !isBs3()) {
-                _this._renderer.addClass(dropdown, 'show');
+                _this._renderer.addClass(dropdown, 'is-open');
                 if (dropdown.classList.contains('dropdown-menu-right')) {
                     _this._renderer.setStyle(dropdown, 'left', 'auto');
                     _this._renderer.setStyle(dropdown, 'right', '0');
@@ -43,7 +43,7 @@ var BsDropdownContainerComponent = /** @class */ (function () {
                     host: {
                         style: 'display:block;position: absolute;'
                     },
-                    template: "\n    <div [class.dropup]=\"direction === 'up'\"\n         [class.dropdown]=\"direction === 'down'\"\n         [class.show]=\"isOpen\"\n         [class.open]=\"isOpen\"><ng-content></ng-content></div>\n  "
+                    template: "\n    <div [class.dropup]=\"direction === 'up'\"\n         [class.dropdown]=\"direction === 'down'\"\n         [class.is-open]=\"isOpen\"\n         [class.open]=\"isOpen\"><ng-content></ng-content></div>\n  "
                 },] },
     ];
     /** @nocollapse */

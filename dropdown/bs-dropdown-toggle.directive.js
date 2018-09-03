@@ -52,7 +52,7 @@ var BsDropdownToggleDirective = /** @class */ (function () {
     ]; };
     BsDropdownToggleDirective.propDecorators = {
         "isDisabled": [{ type: HostBinding, args: ['attr.disabled',] },],
-        "isOpen": [{ type: HostBinding, args: ['attr.aria-expanded',] },],
+        "isOpen": [{ type: HostBinding, args: ['attr.aria-expanded',] }, ],
         "onClick": [{ type: HostListener, args: ['click', [],] },],
         "onDocumentClick": [{ type: HostListener, args: ['document:click', ['$event'],] },],
         "onEsc": [{ type: HostListener, args: ['keyup.esc',] },],
