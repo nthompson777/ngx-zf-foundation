@@ -3,7 +3,7 @@
 </a>
 
 <p align="center">
-Best way to quickly integrate <a href="https://foundation.zurb.com/">Zurb Foundation 6</a>  Components with <a href="https://angular.io/">Angular 6</a>. This is a fork of ngx-bootstrap so no jQuery required to implement with your Angular project.
+Best way to quickly integrate <a href="https://foundation.zurb.com/">Zurb Foundation for Sites 6.5.0</a>  components with <a href="https://angular.io/">Angular 6</a>. This is a fork of ngx-bootstrap so no jQuery required to implement with your Angular project.
 </p>
 
 ## Links

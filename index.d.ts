@@ -8,6 +8,7 @@ export { CollapseDirective, CollapseModule } from './collapse/index';
 export { DateFormatter, DatePickerComponent, DatepickerConfig, DatepickerModule, DayPickerComponent, MonthPickerComponent, YearPickerComponent, BsDatepickerModule, BsDatepickerConfig, BsDaterangepickerConfig, BsLocaleService, BsDaterangepickerDirective, BsDatepickerDirective } from './datepicker/index';
 export { ModalDirective, ModalOptions, ModalBackdropOptions, ModalBackdropComponent, ModalModule, BsModalRef, BsModalService } from './modal/index';
 export { BsDropdownModule, BsDropdownConfig, BsDropdownState, BsDropdownContainerComponent, BsDropdownDirective, BsDropdownMenuDirective, BsDropdownToggleDirective } from './dropdown/index';
+export { OffcanvasDirective, OffcanvasModule } from './offcanvas/index';
 export { PagerComponent, PaginationComponent, PaginationConfig, PaginationModule, PageChangedEvent } from './pagination/index';
 export { BarComponent, ProgressbarComponent, ProgressbarConfig, ProgressbarModule } from './progressbar/index';
 export { RatingComponent, RatingModule } from './rating/index';

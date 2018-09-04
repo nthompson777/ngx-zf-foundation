@@ -1,31 +1,32 @@
 {
-	"main": "bundles/ngx-bootstrap.umd.js",
+	"main": "bundles/ngx-zf-foundation.umd.js",
 	"version": "3.0.1",
-	"description": "Native Angular Bootstrap Components",
+	"description": "Native Angular Foundation for Sites Components",
 	"module": "index.js",
 	"typings": "index.d.ts",
 	"keywords": [
 		"angular",
-		"bootstap",
+		"foundation",
 		"ng",
 		"ng2",
 		"angular2",
-		"twitter-bootstrap"
+		"zurb-foundation",
+		"Foundation-for-Sites"
 	],
 	"author": {
-		"name": "Dmitriy Shekhovtsov",
+		"name": "Dmitriy Shekhovtsov, Nate Thompson",
 		"email": "valorkin@gmail.com"
 	},
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/valor-software/ngx-bootstrap.git"
+		"url": "git+ssh://git@github.com/nthompson777/ngx-zf-foundation.git"
 	},
-	"name": "ngx-bootstrap",
-	"es2015": "bundles/ngx-bootstrap.es2015.js",
+	"name": "ngx-zf-foundation",
+	"es2015": "bundles/ngx-zf-foundation.es2015.js",
 	"peerDependencies": {
 		"@angular/common": ">=6.0.0",
 		"@angular/core": ">=6.0.0"
 	},
-	"_id": "ngx-bootstrap@"
+	"_id": "ngx-zf-foundation@"
 }
