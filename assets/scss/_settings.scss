@@ -1,0 +1,10 @@
+/* $button-background-active: darken($button-palette, 45%);
+$button-selectable-focus: darken($button-palette, 45%); */
+$color-map: (
+  primary: $primary-color, 
+  secondary: $secondary-color, 
+  tertiary: $tertiary-color, 
+  success: $success-color, 
+  warning: $warning-color, 
+  alert: $alert-color,
+);
