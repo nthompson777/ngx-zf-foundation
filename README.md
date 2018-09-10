@@ -32,14 +32,15 @@ ngx-bootstrap contains all core (and not only) Bootstrap components powered by A
 
 ## Installation instructions
 
-Install `ngx-zf-foundation` from `yarn`:
+Install `ngx-zf-foundation` from `yarn` or `npm`:
 ```bash
-yarn add ngx-zf-foundation --save
+yarn add ngx-zf-foundation
+npm i ngx-zf-foundation
 ```
 
 Add needed package to NgModule imports:
 ```
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TooltipModule } from 'ngx-zf-foundation';
 
 @NgModule({
   ...
@@ -50,7 +51,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 Add component to your page:
 ```
-<button type="button" class="btn btn-primary"
+<button type="button" class="button primary"
         tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Simple demo
 </button>
@@ -71,24 +72,26 @@ Links to the API Coming Soon!.............
 
 ## Usage & Demo
 
-Main source of API documentation and usage scenarios available here:
+Temporary source of API documentation and usage scenarios available here:
 [https://valor-software.com/ngx-bootstrap/](https://valor-software.com/ngx-bootstrap/)
 
-Additionally you can find demos and docs deployed from latest code with <a href="https://ngx-bootstrap.surge.sh/">angular v4</a> and <a
+<!-- Additionally you can find demos and docs deployed from latest code with <a href="https://ngx-bootstrap.surge.sh/">angular v4</a> and <a
   href="https://ngx-bootstrap-latest.surge.sh/">angular v5</a>
 
-Server side rendered version of this documentation available <a href="https://ngx-universal.herokuapp.com/">here</a>
+Server side rendered version of this documentation available <a href="https://ngx-universal.herokuapp.com/">here</a> -->
 
 ## API
-Check demo page for API [reference](https://valor-software.com/ngx-bootstrap/)
+Temporary demo page (temporarily pointing to ngx-bootstrap) for API [reference](https://valor-software.com/ngx-bootstrap/)
 
-### How to use it with:
+Foundation for Sites API is Coming Soon.
+
+<!-- ### How to use it with:
  - `Bootstrap and angular-cli` please refer to [using-with-bootstrap-and-angular-cli](https://github.com/valor-software/ngx-bootstrap/tree/development/docs/getting-started/bootstrap.md)
  - `angular-seed` please refer to [getting-started-with-angular-seed](https://github.com/valor-software/ngx-bootstrap/tree/development/docs/getting-started/angular-seed.md)
  - `system.js` (and [angular2 quickstart](https://angular.io/docs/ts/latest/quickstart.html)) please checkout [sample repository](https://github.com/valor-software/angular2-quickstart)
  - `plnkr` sample available [here](https://plnkr.co/edit/0NipkZrnckZZROAcnjzB?p=preview)
  - `AoT using ngc and rollup` please refer to [ngx-bootstrap-with-aot](https://github.com/valor-software/ngx-bootstrap/tree/development/docs/getting-started/aot.md)
- - `ASP.NET Core 2.0` please refer to [using-with-asp.net-core-2](https://github.com/csegyud/ASPNETCore_ngx-bootstrap_Sample/blob/master/README.md)
+ - `ASP.NET Core 2.0` please refer to [using-with-asp.net-core-2](https://github.com/csegyud/ASPNETCore_ngx-bootstrap_Sample/blob/master/README.md) -->
 
 ### How to build lib for development
 
@@ -118,7 +121,7 @@ So if you are in trouble, here's where you can look for help.
 The best place to ask questions is on [StackOverflow (under the `ngx-zf-foundation` tag)](https://stackoverflow.com/questions/tagged/ngx-zf-foundation)
 
 
-If, **and only if**, none of the above helped, please open a [new issue](https://github.com/valor-software/ngx-bootstrap/issues/new).
+<!-- If, **and only if**, none of the above helped, please open a [new issue](https://github.com/valor-software/ngx-bootstrap/issues/new). -->
 
 ### License
 
