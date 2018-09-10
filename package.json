@@ -1,6 +1,6 @@
 {
 	"main": "bundles/ngx-zf-foundation.umd.js",
-	"version": "3.0.2",
+	"version": "1.0.0",
 	"description": "Native Angular Foundation for Sites Components",
 	"module": "index.js",
 	"typings": "index.d.ts",
@@ -15,7 +15,7 @@
 	],
 	"author": {
 		"name": "Dmitriy Shekhovtsov, Nate Thompson",
-		"email": "valorkin@gmail.com"
+		"email": "nathanielct777@gmail.com"
 	},
 	"license": "MIT",
 	"repository": {

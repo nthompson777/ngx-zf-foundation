@@ -3,7 +3,7 @@
 </a>
 
 <p align="center">
-Best way to quickly integrate <a href="https://foundation.zurb.com/">Zurb Foundation for Sites 6.5.0</a>  components with <a href="https://angular.io/">Angular 6</a>. This is a fork of ngx-bootstrap so no jQuery required to implement with your Angular project.
+Best way to quickly integrate <a href="https://foundation.zurb.com/">Zurb Foundation for Sites >= 6.4.X</a>  components with <a href="https://angular.io/">Angular 6</a>. This is a fork of ngx-bootstrap so no jQuery required to implement with your Angular project.
 </p>
 
 ## Links
@@ -66,7 +66,7 @@ You will need Foundation 6 styles:
 ### Setting up the Foundation version manually
 Sometimes, your project might contain some library that could interfear with the Foundation framework, or you might have a customized version of Foundation:
 ```
-Instructions here.............
+Links to the API Coming Soon!.............
 ```
 
 ## Usage & Demo
