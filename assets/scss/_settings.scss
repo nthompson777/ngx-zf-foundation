@@ -3,14 +3,18 @@ $button-selectable-focus: darken($button-palette, 45%); */
 $color-map: (
   primary: $primary-color, 
   secondary: $secondary-color, 
-  tertiary: $tertiary-color, 
+  // tertiary: $tertiary-color, 
   success: $success-color, 
   warning: $warning-color, 
   alert: $alert-color,
 );
 
+// Disabled Page Elements Styles
 $cursor-disabled: not-allowed;
 $user-select-disabled: none;
 $pointer-disabled: none; // Change to 'auto' if you wish to have native Foundation behavior
 
 $muted-color: $medium-gray;
+
+// Progressbar
+$progress-meter-animation: width .6s ease;

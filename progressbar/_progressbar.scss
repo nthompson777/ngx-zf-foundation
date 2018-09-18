@@ -1,4 +1,9 @@
 .progress-meter {
-  min-width: 1.5em;
-  transition: width .6s ease;
+  transition: $progress-meter-animation;
+}
+
+// Correct Zurb styling bug that overlooked displaying low percentage text
+.progress-meter-text {
+  transform: translate(-20%, -50%); 
+  margin-left: 5px; 
 }
