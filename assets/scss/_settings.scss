@@ -8,3 +8,9 @@ $color-map: (
   warning: $warning-color, 
   alert: $alert-color,
 );
+
+$cursor-disabled: not-allowed;
+$user-select-disabled: none;
+$pointer-disabled: none; // Change to 'auto' if you wish to have native Foundation behavior
+
+$muted-color: $medium-gray;
