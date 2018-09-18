@@ -215,7 +215,7 @@ var PagerComponent = /** @class */ (function () {
     PagerComponent.decorators = [
         { type: Component, args: [{
                     selector: 'pager',
-                    template: "<ul class=\"pagination\"> <li [class.disabled]=\"noPrevious()\" [class.pagination-previous]=\"align\" [ngClass]=\"{'pull-right': align, 'float-right': align}\" class=\"{{ pageBtnClass }}\"> <a href (click)=\"selectPage(page - 1, $event)\">{{ getText('previous') }}</a> </li> <li [class.disabled]=\"noNext()\" [class.pagination-next]=\"align\" [ngClass]=\"{'pull-right': align, 'float-right': align}\" class=\"{{ pageBtnClass }}\"> <a href (click)=\"selectPage(page + 1, $event)\">{{ getText('next') }}</a> </li> </ul> ",
+                    template: "<ul class=\"pagination\"> <li [class.disabled]=\"noPrevious()\" [class.pagination-previous]=\"align\" [ngClass]=\"{'pull-right': align, 'float-right': align}\" class=\"{{ pageBtnClass }}\"> <a href *ngIf=\"!noPrevious()\" (click)=\"selectPage(page - 1, $event)\">{{ getText('previous') }}</a><span href *ngIf=\"noPrevious()\">{{ getText('previous') }}</span> </li> <li [class.disabled]=\"noNext()\" [class.pagination-next]=\"align\" [ngClass]=\"{'pull-right': align, 'float-right': align}\" class=\"{{ pageBtnClass }}\"> <a href *ngIf=\"!noNext()\" (click)=\"selectPage(page + 1, $event)\">{{ getText('next') }}</a><span *ngIf=\"noNext()\">{{ getText('next') }}</span> </li> </ul> ",
                     providers: [PAGER_CONTROL_VALUE_ACCESSOR]
                 },] },
     ];

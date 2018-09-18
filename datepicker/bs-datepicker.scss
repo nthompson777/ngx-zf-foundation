@@ -147,13 +147,11 @@
         span {
           display: block;
           margin: 0 auto;
-          font-size: 13px;
+          font-size: 11px;
           border-radius: 50%;
           position: relative;
-          /*z-index: 1;*/
-          -moz-user-select: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
+          z-index: 1;
+          user-select: none;
         }
 
         &:not(.disabled) span {
