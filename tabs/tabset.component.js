@@ -103,7 +103,7 @@ var TabsetComponent = /** @class */ (function () {
     };
     TabsetComponent.prototype.setClassMap = function () {
         this.classMap = (_a = {
-                'nav-stacked': this.vertical,
+                'vertical': this.vertical,
                 'flex-column': this.vertical,
                 'nav-justified': this.justified
             },
